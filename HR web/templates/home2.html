@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALARY PREDICTION</title>
+    <link rel='stylesheet' href='/static/css/style.css'>
+
+<style>
+body{
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+button:hover{
+      color: black;
+      background-color: yellow;
+}
+
+</style>
+</head>
+<body background="/static/Image/comp.jpeg">
+    <div class='navbar'>
+        <ul>
+            <li><a href="{{url_for('home')}}" class='active'>HOME</a></li>
+            <li><a href="{{url_for('salary')}}">SALARY</a></li>
+            <li><a href="{{url_for('dashboard')}}">DASHBOARD</a></li> 
+        </ul>
+    </div>
+
+<div class='input form'>
+    <form action="{{url_for('predict')}}" method="post" id='input head'>
+        <h1 id='heading' style="color:rgb(245, 249, 250);">HR Employee Salary Prediction</h1>
+        <h2 id='input' style="color:rgb(245, 249, 250);">Enter the values</h2>
+        <table class='table text-white'>
+        <tbody>
+        <tr class='my-5'>
+        <th scope='row' style="color:rgb(245, 249, 250);">Age</th>
+        <th><input type='text' class='form control' id='age' name='age' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(17-78)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Workclass</th>
+        <th><input type='text' class='form control' id='wc' name='wc' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-7)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Education</th>
+        <th><input type='text' class='form control' id='ed' name='ed' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-5)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Education Number</th>
+        <th><input type='text' class='form control' id='edn' name='edn' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-15)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Marital-status</th>
+        <th><input type='text' class='form control' id='ms' name='ms' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-3)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Occupation</th>
+        <th><input type='text' class='form control' id='oc' name='oc' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-13)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Relationship</th>
+        <th><input type='text' class='form control' id='rls' name='rls' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-5)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Race</th>
+        <th><input type='text' class='form control' id='rc' name='rc' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-4)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Sex</th>
+        <th><input type='text' class='form control' id='sex' name='sex' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0,1)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Capital-gain</th>
+        <th><input type='text' class='form control' id='cg' name='cg' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-99999)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Capital-loss</th>
+        <th><input type='text' class='form control' id='cl' name='cl' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-4356)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Native-country</th>
+        <th><input type='text' class='form control' id='nc' name='nc' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(0-40)</th>
+        </tr>
+        <tr>
+        <th style="color:rgb(245, 249, 250);">Hours-per-week</th>
+        <th><input type='text' class='form control' id='hpw' name='hpw' step='0.1'></th>
+        <th scope='row' style="color:rgb(245, 249, 250);">Possible inputs(1-52)</th>
+        </tr>
+        </tbody>
+        </table>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+</div>
+    
+</body>
+</html>
