@@ -10,6 +10,6 @@ The dataset used here is the Adult Income dataset consisting of 32561 observatio
 •	Apply various data cleaning techniques to prepare the dataset. The data cleaning techniques include finding missing values, outliers and duplicates if any.<br/>
 •	Try various visualization techniques with the data in hands. Elaborate the dataset for the training and testing phase and try classification model, since the predictor variable ‘salary’ is a categorical feature.<br/>
 •	After getting the best model, design a website for salary prediction using flask.<br/>
-# Coclusion
+# Conclusion
 After building various machine learning models, Gradient Boosting Classifier stood first in terms of accuracy in prediction with 86.90% when compared with other models. Hypertuning was also done on the best model selected. 
 ![image](https://user-images.githubusercontent.com/79460483/111096425-838a4480-8565-11eb-9fa7-5779d4b925f0.png)
