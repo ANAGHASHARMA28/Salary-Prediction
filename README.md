@@ -5,7 +5,7 @@ According to the dataset under consideration, we need to predict the categorical
 # Dataset
 The dataset used here is the Adult Income dataset consisting of 32561 observations and 14 attributes where the aim is to predict whether an employee salary exceeds 50K or not.
 # Approach
-•	Import the HR dataset.<br/> 
+•	Import the dataset.<br/> 
 •	Start an exploratory data analysis to detect the key factors, trends and patterns in the dataset.<br/>
 •	Apply various data cleaning techniques to prepare the dataset. The data cleaning techniques include finding missing values, outliers and duplicates if any.<br/>
 •	Try various visualization techniques with the data in hands. Elaborate the dataset for the training and testing phase and try classification model, since the predictor variable ‘salary’ is a categorical feature.<br/>
